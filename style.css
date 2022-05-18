@@ -1,29 +1,62 @@
 :root {
     --grid-cols: 1;
     --grid-rows: 1;
-    max-width: 100%;
-    max-height: 100%;
+  }
+
+  body{
+    overflow: hidden;
   }
   
   .parent{
-    display: grid;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
     justify-content: center;
     align-items: center;
-    height: 100vh;
+    overflow: hidden;
   }
 
   #container {
     display: grid;
-    justify-content: center;
-    max-width: 500px;
-    max-height: 600px;
+    width: 800px;
+    height: 800px;
     grid-template-rows: repeat(var(--grid-rows), 1fr);
-    grid-template-columns: repeat(var(--grid-cols), 1fr);
-    
+    grid-template-columns: repeat(var(--grid-cols), 1fr);    
   }
   
   .grid-item {
     border: 1px solid #ddd;
     text-align: center;
     color: transparent;
+  }
+
+  .slider {
+    -webkit-appearance: none;
+    width: 100%;
+    height: 15px;
+    width: 500px;
+    border-radius: 5px;  
+    background: #d3d3d3;
+    outline: none;
+    opacity: 0.7;
+    -webkit-transition: .2s;
+    transition: opacity .2s;
+  }
+  
+  .slider::-webkit-slider-thumb {
+    -webkit-appearance: none;
+    appearance: none;
+    width: 25px;
+    height: 25px;
+    border-radius: 50%; 
+    background: #4ea1ee;
+    cursor: pointer;
+  }
+  
+  .slider::-moz-range-thumb {
+    width: 25px;
+    height: 25px;
+    border-radius: 50%;
+    background: #4ea1ee;
+    cursor: pointer;
   }
