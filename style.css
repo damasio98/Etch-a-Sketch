@@ -10,7 +10,7 @@
   .parent{
     display: flex;
     flex-direction: column;
-    gap: 10px;
+    gap: 5px;
     justify-content: center;
     align-items: center;
     overflow: hidden;
@@ -60,3 +60,60 @@
     background: #4ea1ee;
     cursor: pointer;
   }
+
+  #size{
+    font-size: 25px;
+    font-family: 'Courier New', Courier, monospace;
+    margin-top: 5px;
+  }
+
+  #buttons{
+    display: flex;
+    width: 800px;
+    justify-content: space-between;
+  }
+
+  /*#black,
+  #rainbow,
+  #erase,
+  #clear{
+    background-color: #ddd;
+    color: black;
+    font-size: 20px;
+    border:2px solid #ddd;
+    text-align: center;
+    border-radius: 6px;
+    padding: 5px 20px 5px 20px; 
+}*/
+
+.buttons{
+  display:inline-block;
+  background-color: #ddd;
+  padding:0.35em 1.2em;
+  border:0.1em solid #ddd;
+  margin:0 0.3em 0.3em 0;
+  border-radius:0.12em;
+  font-size: 20px;
+  box-sizing: border-box;
+  text-decoration:none;
+  font-family:'Roboto',sans-serif;
+  font-weight:300;
+  color:#000000;
+  text-align:center;
+  transition: all 0.2s;
+}
+.buttons:hover{
+  font-weight: bolder;
+  background-color:#c2c2c2;
+}
+@media all and (max-width:30em){
+  .buttons{
+    display:block;
+    margin:0.4em auto;
+  }
+}
+
+.buttons:focus{
+  background-color:#c2c2c2;
+  font-weight: bold;
+}
