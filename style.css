@@ -100,6 +100,7 @@
 .buttons:hover{
   font-weight: bolder;
   background-color:#c2c2c2;
+  cursor: pointer;
 }
 @media all and (max-width:30em){
   .buttons{
